@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("../bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+body .app-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), black);
+}
+
+body .app-wrap header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 10px 30px;
+}
+
+body .app-wrap header input {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(8, 130, 230, 0.5);
+  border-radius: 15px 0 15px 0;
+  border-bottom: 3px solid rgba(145, 192, 15, 0.842);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+body .app-wrap header input:focus {
+  background-color: rgba(8, 130, 230, 0.3);
+}
+
+body .app-wrap main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .app-wrap main .city {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+body .app-wrap main .date {
+  font-size: 1.5rem;
+}
+
+body .app-wrap main .temp {
+  font-size: 8rem;
+  font-weight: 900;
+  margin: 2rem 0;
+  text-shadow: 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+body .app-wrap main .temp span {
+  font-weight: 500;
+}
+
+body .app-wrap main .weather {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  margin: 1.5rem 0;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+body .app-wrap main .low {
+  font-size: 2rem;
+  text-shadow: 0px 8px rgba(0, 0, 0, 0.4);
+}
