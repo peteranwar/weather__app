@@ -22,8 +22,8 @@ body .app-wrap {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(black));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), black);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
 }
 
 body .app-wrap header {
@@ -36,12 +36,27 @@ body .app-wrap header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 10px 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 10px;
+}
+
+body .app-wrap header h1 {
+  font-family: cursive;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+body .app-wrap header h1 span {
+  color: #7cad20;
+  font-size: 2.8rem;
 }
 
 body .app-wrap header input {
   width: 100%;
-  max-width: 300px;
+  max-width: 330px;
   padding: 15px 20px;
   border: none;
   outline: none;
@@ -84,7 +99,7 @@ body .app-wrap main .date {
 body .app-wrap main .temp {
   font-size: 8rem;
   font-weight: 900;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   text-shadow: 2px 10px rgba(0, 0, 0, 0.8);
 }
 

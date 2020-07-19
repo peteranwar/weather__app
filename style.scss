@@ -1,82 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
-    background-image: url('../bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+  font-family: sans-serif;
+  background-image: url("../bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    );
 
-    .app-wrap {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        background: linear-gradient(to bottom, rgba(0,0,0,.4), 
-        rgba(0,0,0,7));
-
-        header {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           padding: 50px 10px 30px;
-            input {
-                width: 100%;
-                max-width: 300px;
-                padding: 15px 20px;
-                border: none;
-                outline: none;
-                background-color: rgba(8, 130, 230, .5);
-                border-radius: 15px 0 15px 0;
-                border-bottom: 3px solid rgba(145, 192, 15, 0.842);
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: white;
-
-                &:focus {
-                    background-color:rgba(8, 130, 230, .3);
-
-                }
-            }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 10px ;
+      h1 {
+        font-family: cursive;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        span {
+          color: #7cad20;
+          font-size: 2.8rem;
         }
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            
-            .city {
-                font-size: 3rem;
-                font-weight: 500;
-                margin: 0 5px;
-            }
-            .date {
-                font-size: 1.5rem;
-            }
-            .temp {
-                font-size: 8rem;
-                font-weight: 900;
-                margin: 2rem 0;
-                text-shadow: 2px 10px  rgba(0,0,0, .8) ;
-                span {
-                    font-weight: 500;
-                }
-            }
-            .weather{
-                font-size: 3rem;
-                font-weight: 700;
-                font-style: italic;
-                margin: 1.5rem 0;
-                text-shadow: 0px 3px  rgba(0,0,0, .4) ;
-            }
-            .low {
-                font-size: 2rem;
-                text-shadow: 0px 8px  rgba(0,0,0, .4) ;
+      }
+      input {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px 20px;
+        border: none;
+        outline: none;
+        background-color: rgba(8, 130, 230, 0.5);
+        border-radius: 15px 0 15px 0;
+        border-bottom: 3px solid rgba(145, 192, 15, 0.842);
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
 
-            }
+        &:focus {
+          background-color: rgba(8, 130, 230, 0.3);
         }
+      }
     }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .city {
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 0 5px;
+      }
+      .date {
+        font-size: 1.5rem;
+      }
+      .temp {
+        font-size: 8rem;
+        font-weight: 900;
+        margin: 1.5rem 0;
+        text-shadow: 2px 10px rgba(0, 0, 0, 0.8);
+        span {
+          font-weight: 500;
+        }
+      }
+      .weather {
+        font-size: 3rem;
+        font-weight: 700;
+        font-style: italic;
+        margin: 1.5rem 0;
+        text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+      }
+      .low {
+        font-size: 2rem;
+        text-shadow: 0px 8px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
 }
